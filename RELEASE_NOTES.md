@@ -1,6 +1,49 @@
-# Release Notes — Lintua.Cadet v2.2.0
+# Release Notes — Lintua.Cadet v2.3.3
 
 Alle Änderungen seit Version 1.1.0.
+
+---
+
+## Neu in v2.3.3
+
+### Für alle Nutzer
+
+- **Sortierte Schüler-Übersicht**: Aktive Schüler stehen oben, prüfungsreife in der Mitte, deaktivierte am Ende der Liste.
+- **Ruhige Synchronisation**: Die Schüler-Übersicht flackert nicht mehr während der Synchronisation — Daten werden batchweise aktualisiert statt einzeln pro Dokument.
+- **Avatar-Farbe korrigiert**: Prüfungsreife Schüler werden nach einer Datenwiederherstellung sofort mit blauem Avatar angezeigt — ein Neustart ist nicht mehr nötig.
+- **Ausbildungsnachweis-Export korrigiert**: Die Übungstabelle im PDF-Export wird jetzt vollständig auf mehreren Seiten dargestellt — auch bei Syllabi mit vielen Übungen.
+- **Schüler-Unterschrift bei Übungsabschluss**: Beim Abschließen einer Übung wird neben der Fluglehrer-Unterschrift jetzt auch die Schüler-Unterschrift erfasst. Beide Unterschriften erscheinen im PDF-Export und werden über alle Geräte synchronisiert.
+- **PDF-Export auf iOS/iPadOS verbessert**: Der PDF-Export öffnet jetzt das iOS Share Sheet statt den Druckdialog — so werden Querformat-PDFs korrekt dargestellt und können direkt gedruckt, gespeichert oder per AirDrop geteilt werden.
+
+### Für Administratoren
+
+- **Schema-Update v18**: Neue Spalte `student_signature` (BLOB) in ExerciseCompletions. Migration füllt bestehende Completions mit einem Platzhalter-Bild.
+
+---
+
+## Neu in v2.3.2
+
+### Für alle Nutzer
+
+- **Schüler-Übersicht überarbeitet**: Die Startseite zeigt auf einen Blick den Status jedes Schülers — Ausbildungsphase (Icon), Medical- und Flugaktivitäts-Ampel (Avatarfarbe) sowie letzter Flug und Übungsfortschritt. Tippen auf den Avatar öffnet eine Detailansicht aller Statuskriterien.
+- **Responsive Layout**: Die Schüler-Übersicht passt sich an die Bildschirmbreite an — kompakt auf dem iPhone, zweispaltig auf dem iPad, einzeilig auf dem Desktop.
+- **Übungsdetails**: In der Übungsverwaltung können Details zu jeder Übung eingesehen werden, einschließlich Syllabus-Zuordnung.
+- **Übungsliste verbessert**: Übungen sind nach Praxis/Theorie gruppiert und zeigen ihre Syllabus-Zuordnung an.
+- **Schutz vor Datenverlust**: Beim Verlassen von Bearbeitungs-Screens mit ungespeicherten Änderungen erscheint eine Sicherheitsabfrage.
+- **Korrekte Zeitverarbeitung**: Alle Zeitangaben werden einheitlich in UTC verarbeitet und gespeichert.
+- **Login-Eingabe**: Die Rechtschreibprüfung korrigiert nicht mehr den Benutzernamen.
+- **Signatur-Upload (macOS)**: Das Laden von Signaturbildern über den Dateidialog funktioniert wieder korrekt.
+- **Ersteinrichtung**: Übungen werden jetzt vor dem Syllabus eingerichtet — die logische Reihenfolge.
+- **Diverse Korrekturen**: Kontextmenü-Texte, Dialog-Texte und Darstellung auf dem iPhone verbessert.
+
+### Für Administratoren
+
+- **Geräte-Fernsteuerung**: Administratoren können über ein Server-Script Geräteaktionen auslösen — vollständige Datenaktualisierung oder Werksreset. Die App prüft bei jeder Synchronisation auf ausstehende Aktionen.
+- **Automatische Wiederverbindung**: Bei Authentifizierungsfehlern (401/403/404) versucht die App automatisch, die Zugangsdaten wiederherzustellen — ohne Benutzereingriff.
+- **Robustere Synchronisation**: Automatische Wiederholung bei Serverüberlastung (HTTP 429), zuverlässigere Datenwiederherstellung bei großen Datenmengen, korrektes Sync-Verhalten bei allen Datenänderungen.
+- **Verbose Sync-Logging**: In den Einstellungen kann ein erweitertes Fehler-Logging aktiviert werden (Sektion „Entwickler", nur für Admins sichtbar). Zeigt CouchDB-Antworten bei Sync-Fehlern — hilfreich zur Fehlerdiagnose.
+- **Sicherheit**: Personenbezogene Daten werden in Log-Ausgaben gekürzt oder unterdrückt. Mindestlänge für Passwörter auf 8 Zeichen erhöht.
+- **Datenmigration verbessert**: Übungsinhalte aus v1.1 werden bei der Migration nicht mehr ungewollt überschrieben.
 
 ---
 
