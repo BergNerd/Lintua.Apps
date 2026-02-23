@@ -1,6 +1,22 @@
-# Release Notes — Lintua.Cadet v2.3.3
+# Release Notes — Lintua.Cadet v2.4.0
 
 Alle Änderungen seit Version 1.1.0.
+
+---
+
+## Neu in v2.4.0
+
+### Für alle Nutzer
+
+- **Schülerdaten bearbeiten als freigegebener Fluglehrer**: Fluglehrer, denen ein Schüler freigegeben wurde, können jetzt dessen Daten (Notizen, Medical, ZÜP) bearbeiten und Freigaben verwalten — nicht mehr nur lesen.
+- **Schülerzuweisungen in Benutzerverwaltung**: Bei Fluglehrern gibt es im Kontextmenü einen neuen Punkt „Schülerzuweisungen" — alle aktiven Schüler auf einen Blick zuweisen oder entziehen, statt jeden Schüler einzeln zu öffnen.
+- **Bedienung vereinheitlicht**: Kennungen und Benutzerverwaltung nutzen jetzt das gleiche Bedienkonzept — Tippen auf eine Zeile öffnet das Aktionsmenü.
+- **PDF-Export verbessert**: Spaltenüberschriften, Kopfbereich mit Schülerdaten und „Seite x von y" auf jeder Seite. Bezeichnungen angepasst: „Nachweis der praktischen Ausbildung".
+- **Dialoge optimiert**: Keine Überlauf-Probleme mehr bei Dialogen auf kleinen Bildschirmen. Titel kompakter dargestellt.
+
+### Für Administratoren
+
+- **Löschen nur noch für Admins**: Schüler können nur noch von Administratoren gelöscht werden — versehentliches Löschen durch Owner oder freigegebene Fluglehrer ist ausgeschlossen.
 
 ---
 
