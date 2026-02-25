@@ -1,6 +1,22 @@
-# Release Notes — Lintua.Cadet v2.4.0
+# Release Notes — Lintua.Cadet v2.4.1
 
 Alle Änderungen seit Version 1.1.0.
+
+---
+
+## Neu in v2.4.1
+
+### Für alle Nutzer
+
+- **Vereinfachte Ersteinrichtung**: Bei einer frischen Installation startet die App direkt mit der Geräte-Einrichtung — der vorgelagerte Login-Schritt entfällt.
+- **Account deaktivieren**: Benutzer können ihren eigenen Account in den Einstellungen deaktivieren.
+
+### Für Administratoren
+
+- **Geräte-Registrierung per DNS**: Die Registrierungs-Datenbank wird automatisch per DNS-Konvention ermittelt — keine separate Konfiguration nötig.
+- **Demo-Umgebung**: Neue Demo-Datenbank mit anonymisierten Testdaten, automatischer Geräte-Registrierung und Reset-Script.
+- **Datenbank-Identitätsprüfung**: Beim Sync wird geprüft, ob die lokale Datenbank zur Server-Datenbank passt — verhindert versehentliches Verbinden mit der falschen Instanz.
+- **v1.1.0-Migration robuster**: Direkter Migrationspfad v7→v18 korrigiert, Datumsfelder mit Unix-Timestamps werden korrekt verarbeitet.
 
 ---
 
