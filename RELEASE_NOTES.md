@@ -1,6 +1,15 @@
-# Release Notes — Lintua.Cadet v2.4.1
+# Release Notes — Lintua.Cadet v2.4.2
 
 Alle Änderungen seit Version 1.1.0.
+
+---
+
+## Neu in v2.4.2
+
+### Für alle Nutzer
+
+- **Route in Flugübersicht vollständig sichtbar**: Die Route-Spalte passt sich jetzt dynamisch an die Schriftgröße an — ICAO-Codes werden nicht mehr abgeschnitten.
+- **Fluglehrer-Zuordnung bei Schüler-Anlage**: Legt ein Fluglehrer einen neuen Schüler an, wird die Zuordnung jetzt korrekt hinterlegt und ist für Administratoren sichtbar.
 
 ---
 
