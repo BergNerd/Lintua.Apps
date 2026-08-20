@@ -1,6 +1,26 @@
-# Release Notes — Lintua.Cadet v2.4.2
+# Release Notes — Lintua.Cadet v2.5.0
 
 Alle Änderungen seit Version 1.1.0.
+
+---
+
+## Neu in v2.5.0
+
+### Für alle Nutzer
+
+- **Neuer Flug mit sinnvollen Vorgaben**: Beim Anlegen eines Fluges werden Fluglehrer (der angemeldete Nutzer), Startplatz und Kennzeichen automatisch vorbelegt — aus dem letzten Flug desselben Tages, sonst EDBS als Startplatz. Alle Vorgaben lassen sich überschreiben.
+- **Flüge je Übung einsehen**: In der Fortschrittsübersicht zeigt ein Tipp auf den Fortschrittsbalken alle Flüge, in denen die Übung geflogen wurde (Datum, Fluglehrer, Blockzeit, Solo).
+- **Abschlussdatum frei wählbar**: Beim Abschließen einer Übung lässt sich das Abschlussdatum wählen — vorbelegt mit dem Datum des letzten zugehörigen Fluges und bei Bedarf änderbar.
+- **Fluglehrer in der Flugübersicht**: Die Flugübersicht zeigt jetzt den Namen des Fluglehrers.
+- **Zeiten nicht mehr verdeckt**: In der Flugübersicht wurden die Zeiten der untersten Flüge nicht mehr vom „Neuer Flug"-Button verdeckt.
+- **Lokales Backup auf iPhone/iPad behoben**: Das Speichern eines Datenbank-Backups funktioniert jetzt auch auf iOS (zuvor brach es mit einer Fehlermeldung ab).
+- **Aktuelle Daten direkt nach der Anmeldung**: Nach dem Anmelden (auch bei automatischer Anmeldung) wird sofort synchronisiert. Änderungen von anderen Geräten sind damit gleich sichtbar, statt erst beim nächsten Synchronisationslauf.
+- **Backup für alle Nutzer**: „Backup erstellen" steht jetzt allen Nutzern zur Verfügung — nicht mehr nur Administratoren. (Das Wiederherstellen aus einer Backup-Datei bleibt Administratoren vorbehalten.)
+- **Keine unbemerkte Abschaltung der Synchronisation mehr**: Bisher konnte ein Gerät, das längere Zeit nicht synchronisiert hatte, still in den Einzelgeräte-Modus wechseln — neu erfasste Daten blieben dann unbemerkt nur lokal. Das passiert nicht mehr: Das Gerät synchronisiert weiter und lädt dabei zuerst die lokalen Daten hoch. Der Einzelgeräte-Modus lässt sich jetzt außerdem von allen Nutzern beenden (mit Sicherheitsabfrage); dabei werden noch nicht übertragene Daten hochgeladen — lokale Daten gehen nicht verloren.
+
+### Für Administratoren
+
+- **DynDNS/IPv4-Ermittlung**: Der Server ermittelt seine öffentliche IPv4 jetzt über einen externen Echo-Dienst (ifconfig.co, Fallback ident.me) — nötig bei DS-Lite/CGNAT-Anschlüssen. Betrifft nur die Server-Seite.
 
 ---
 
